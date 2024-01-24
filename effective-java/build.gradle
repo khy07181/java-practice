@@ -11,6 +11,7 @@ repositories {
 
 dependencies {
     implementation 'org.projectlombok:lombok:1.18.26'
+    implementation 'org.springframework.boot:spring-boot-starter:3.2.2'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation platform('org.junit:junit-bom:5.9.1')
