@@ -1,3 +1,5 @@
 rootProject.name = 'java-practice'
 include 'effective-java'
 include 'common'
+include 'design-pattern'
+
