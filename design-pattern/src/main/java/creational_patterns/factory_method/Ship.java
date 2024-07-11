@@ -1,4 +1,4 @@
-package creational_patterns.factoy_method;
+package creational_patterns.factory_method;
 
 public class Ship implements Transport {
 
