@@ -1,8 +1,8 @@
 package creational_patterns.template_method.processor;
 
-import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
+
+import org.junit.jupiter.api.Test;
 
 class DataProcessorTest {
 
