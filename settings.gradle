@@ -3,4 +3,5 @@ include 'effective-java'
 include 'common'
 include 'jpa'
 include 'design-pattern'
+include 'objects'
 
