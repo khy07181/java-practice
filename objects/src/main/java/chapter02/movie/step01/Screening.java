@@ -1,9 +1,9 @@
-package chapter02;
+package chapter02.movie.step01;
 
+import chapter02.money.Money;
 import java.time.LocalDateTime;
 
 public class Screening {
-
     private Movie movie;
     private int sequence;
     private LocalDateTime whenScreened;
@@ -14,7 +14,7 @@ public class Screening {
         this.whenScreened = whenScreened;
     }
 
-    public LocalDateTime getWhenScreened() {
+    public LocalDateTime getStartTime() {
         return whenScreened;
     }
 
@@ -27,12 +27,8 @@ public class Screening {
     }
 
     public Reservation reserve(Customer customer, int audienceCount) {
-        return new Reservation(
-                customer,
-                this,
-                calculateFee(audienceCount),
-                audienceCount
-        );
+        return new Reservation(customer, this, calculateFee(audienceCount),
+                audienceCount);
     }
 
     private Money calculateFee(int audienceCount) {

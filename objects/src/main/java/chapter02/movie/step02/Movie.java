@@ -1,18 +1,19 @@
-package chapter02;
+package chapter02.movie.step02;
 
+import chapter02.money.Money;
 import java.time.Duration;
 
 public class Movie {
     private String title;
     private Duration runningTime;
     private Money fee;
-    private DiscountPolicy discountpolicy;
+    private DiscountPolicy discountPolicy;
 
     public Movie(String title, Duration runningTime, Money fee, DiscountPolicy discountPolicy) {
         this.title = title;
         this.runningTime = runningTime;
         this.fee = fee;
-        this.discountpolicy = discountPolicy;
+        this.discountPolicy = discountPolicy;
     }
 
     public Money getFee() {
@@ -20,6 +21,6 @@ public class Movie {
     }
 
     public Money calculateMovieFee(Screening screening) {
-        return fee.minus(discountpolicy.calculateDiscountAmount(screening));
+        return fee.minus(discountPolicy.calculateDiscountAmount(screening));
     }
 }

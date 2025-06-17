@@ -1,10 +1,11 @@
-package chapter02;
+package chapter02.movie.step01.pricing;
 
+import chapter02.movie.step01.DiscountCondition;
+import chapter02.movie.step01.Screening;
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 
 public class PeriodCondition implements DiscountCondition {
-
     private DayOfWeek dayOfWeek;
     private LocalTime startTime;
     private LocalTime endTime;
